@@ -1,0 +1,164 @@
+OpenROAD v2.0-25794-g7cbd77e248 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+wns max 0.00
+tns max 0.00
+worst slack max 4.24
+worst slack min 0.64
+Startpoint: reset (input port clocked by clk)
+Endpoint: u_risk_fsm.safe$_DFF_PP1_
+          (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   1.00    1.00 v input external delay
+   0.00    1.00 v reset (in)
+   0.42    1.42 v input33/X (sky130_fd_sc_hd__clkdlybuf4s50_1)
+   0.21    1.63 ^ _273_/Y (sky130_fd_sc_hd__inv_1)
+   0.00    1.63 ^ u_risk_fsm.safe$_DFF_PP1_/SET_B (sky130_fd_sc_hd__dfstp_2)
+           1.63   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.23   10.23   clock network delay (propagated)
+  -0.20   10.03   clock uncertainty
+   0.00   10.03   clock reconvergence pessimism
+          10.03 ^ u_risk_fsm.safe$_DFF_PP1_/CLK (sky130_fd_sc_hd__dfstp_2)
+   0.11   10.14   library recovery time
+          10.14   data required time
+---------------------------------------------------------
+          10.14   data required time
+          -1.63   data arrival time
+---------------------------------------------------------
+           8.52   slack (MET)
+
+
+Startpoint: rel_velocity[3] (input port clocked by clk)
+Endpoint: u_risk_fsm.safe$_DFF_PP1_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   1.00    1.00 ^ input external delay
+   0.00    1.00 ^ rel_velocity[3] (in)
+   0.59    1.59 ^ input26/X (sky130_fd_sc_hd__clkdlybuf4s50_1)
+   0.29    1.88 v _416_/SUM (sky130_fd_sc_hd__ha_1)
+   0.25    2.13 v _482_/COUT (sky130_fd_sc_hd__ha_1)
+   0.44    2.56 v _415_/COUT (sky130_fd_sc_hd__fa_1)
+   0.34    2.90 ^ _313_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.13    3.04 v _316_/Y (sky130_fd_sc_hd__o31ai_2)
+   0.28    3.31 ^ _318_/Y (sky130_fd_sc_hd__a31oi_2)
+   0.22    3.54 ^ _321_/X (sky130_fd_sc_hd__o31a_1)
+   0.08    3.62 v _409_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.18    3.80 ^ _410_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.18    3.98 ^ _411_/X (sky130_fd_sc_hd__xor2_1)
+   0.27    4.26 v _445_/SUM (sky130_fd_sc_hd__ha_1)
+   0.12    4.38 ^ _326_/Y (sky130_fd_sc_hd__nand4_1)
+   0.09    4.46 v _329_/Y (sky130_fd_sc_hd__nor2_1)
+   0.32    4.78 v _336_/X (sky130_fd_sc_hd__a221o_1)
+   0.21    4.99 ^ _342_/Y (sky130_fd_sc_hd__nor3_1)
+   0.10    5.09 v _348_/Y (sky130_fd_sc_hd__nor4_1)
+   0.32    5.41 v _384_/X (sky130_fd_sc_hd__a311o_1)
+   0.30    5.71 v _475_/SUM (sky130_fd_sc_hd__ha_1)
+   0.00    5.71 v u_risk_fsm.safe$_DFF_PP1_/D (sky130_fd_sc_hd__dfstp_2)
+           5.71   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.23   10.23   clock network delay (propagated)
+  -0.20   10.03   clock uncertainty
+   0.00   10.03   clock reconvergence pessimism
+          10.03 ^ u_risk_fsm.safe$_DFF_PP1_/CLK (sky130_fd_sc_hd__dfstp_2)
+  -0.08    9.95   library setup time
+           9.95   data required time
+---------------------------------------------------------
+           9.95   data required time
+          -5.71   data arrival time
+---------------------------------------------------------
+           4.24   slack (MET)
+
+
+Startpoint: reset (input port clocked by clk)
+Endpoint: u_risk_fsm.warning$_DFF_PP0_
+          (removal check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   1.00    1.00 v input external delay
+   0.00    1.00 v reset (in)
+   0.42    1.42 v input33/X (sky130_fd_sc_hd__clkdlybuf4s50_1)
+   0.21    1.63 ^ _273_/Y (sky130_fd_sc_hd__inv_1)
+   0.00    1.63 ^ u_risk_fsm.warning$_DFF_PP0_/RESET_B (sky130_fd_sc_hd__dfrtp_1)
+           1.63   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.23    0.23   clock network delay (propagated)
+   0.20    0.43   clock uncertainty
+   0.00    0.43   clock reconvergence pessimism
+           0.43 ^ u_risk_fsm.warning$_DFF_PP0_/CLK (sky130_fd_sc_hd__dfrtp_1)
+   0.37    0.80   library removal time
+           0.80   data required time
+---------------------------------------------------------
+           0.80   data required time
+          -1.63   data arrival time
+---------------------------------------------------------
+           0.82   slack (MET)
+
+
+Startpoint: u_risk_fsm.state[1]$_DFF_PP0_
+            (rising edge-triggered flip-flop clocked by clk)
+Endpoint: u_risk_fsm.state[1]$_DFF_PP0_
+          (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.23    0.23   clock network delay (propagated)
+   0.00    0.23 ^ u_risk_fsm.state[1]$_DFF_PP0_/CLK (sky130_fd_sc_hd__dfrtp_1)
+   0.37    0.60 ^ u_risk_fsm.state[1]$_DFF_PP0_/Q (sky130_fd_sc_hd__dfrtp_1)
+   0.17    0.77 ^ _480_/COUT (sky130_fd_sc_hd__ha_1)
+   0.07    0.83 v _358_/Y (sky130_fd_sc_hd__nor2_1)
+   0.11    0.94 ^ _359_/Y (sky130_fd_sc_hd__nand2_1)
+   0.08    1.02 v _412_/Y (sky130_fd_sc_hd__nor2b_1)
+   0.00    1.02 v u_risk_fsm.state[1]$_DFF_PP0_/D (sky130_fd_sc_hd__dfrtp_1)
+           1.02   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.23    0.23   clock network delay (propagated)
+   0.20    0.43   clock uncertainty
+   0.00    0.43   clock reconvergence pessimism
+           0.43 ^ u_risk_fsm.state[1]$_DFF_PP0_/CLK (sky130_fd_sc_hd__dfrtp_1)
+  -0.05    0.38   library hold time
+           0.38   data required time
+---------------------------------------------------------
+           0.38   data required time
+          -1.02   data arrival time
+---------------------------------------------------------
+           0.64   slack (MET)
+
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             2.98e-05   5.11e-06   6.10e-11   3.49e-05  13.7%
+Combinational          8.27e-05   9.64e-05   1.09e-09   1.79e-04  70.6%
+Clock                  2.76e-05   1.22e-05   2.28e-11   3.98e-05  15.7%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.40e-04   1.14e-04   1.18e-09   2.54e-04 100.0%
+                          55.2%      44.8%       0.0%
+Design area 2258 um^2 23% utilization.
