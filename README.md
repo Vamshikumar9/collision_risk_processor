@@ -69,8 +69,30 @@ flowchart TD
     L --> C
     
 
+## Future Scope
 
+The Collision-Risk Detection Processor can be enhanced in several ways to improve its functionality, performance, and practical applicability.
 
+1. Advanced Risk Detection: Implement more sophisticated algorithms that consider vehicle speed, acceleration, braking distance, road conditions, and time-to-collision (TTC) for more accurate risk assessment.
 
+2. Sensor Integration: Interface the processor with real-time sensors such as radar, LiDAR, ultrasonic sensors, or cameras to obtain vehicle distance and relative-velocity data.
+
+3. Adaptive Thresholds: Replace fixed thresholds with adaptive thresholds that adjust according to vehicle speed, environmental conditions, and road situations.
+
+4. Improved Hardware Architecture: Optimize the Verilog RTL to reduce chip area, power consumption, and critical-path delay while maintaining correct functionality.
+
+5. Low-Power Design: Incorporate clock gating and other power-optimization techniques to reduce energy consumption in embedded automotive systems.
+
+6. Enhanced Verification: Extend the testbench to cover additional boundary conditions, unusual input combinations, reset behavior, and extensive functional scenarios. Formal verification can also be considered.
+
+7. Automotive Communication: Add interfaces such as CAN or other suitable communication protocols to exchange information with vehicle electronic control units.
+
+8. Physical Design Optimization: Explore floorplanning, placement, routing, and timing-constraint improvements to evaluate whether the target core area of 100 × 100 µm² can be achieved. Perform Static Timing Analysis across the required process, voltage, and temperature (PVT) corners.
+
+9. FPGA Prototyping: Implement the design on an FPGA board to demonstrate its operation with simulated or sensor-derived input data.
+
+10. Safety and Reliability: Investigate fault detection, input validation, fail-safe behavior, and automotive safety requirements before considering any real-world application.
+
+In the future, these enhancements could transform the current educational prototype into a more advanced collision-warning hardware platform. However, real automotive deployment would require extensive testing, safety validation, and compliance with applicable automotive standards.
 
 
