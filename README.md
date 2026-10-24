@@ -1,5 +1,5 @@
 ## VIDEO DEMONSTRATION LINK:
-     ===>  https://drive.google.com/file/d/1L-aGOb0_Rwbxprce1rz8MeYf3nL_NpdV/view?usp=drivesdk
+       https://drive.google.com/file/d/1L-aGOb0_Rwbxprce1rz8MeYf3nL_NpdV/view?usp=drivesdk
 
 ## Design and Physical Implementation of a Collision-Risk Detection Processor Using Verilog HDL and Sky130 Technology
 
