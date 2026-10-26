@@ -369,6 +369,22 @@ To quickly verify and summarize the global signoff metrics from the complete exe
 5.Critical Path Header: Captures the initial lines of the critical asynchronous path leading to u_risk_fsm.safe$_DFF_PP1_.
 
 
+### collision_risk_top.gds
+## Overview
+The top-level physical layout visualization (`collision_risk_top.gds.png`) for the **Collision Risk** hardware block. 
+
+### Details
+* **File Added:** `collision_risk_top.gds.png`
+* **Design Block:** `collision_risk_top` (GDS II layout view)
+* **Key Signals / Interfaces Visible:** 
+  * Distance inputs/outputs (e.g., `distance[...]`)
+  * Relative velocity inputs (`rel_velocity[...]`)
+  * Control and status signals (`clk`, `reset`, `safe`, `warning`, `critical`)
+
+### Description
+Visual representation of the routed physical layout for the collision detection and risk assessment module, showing power routing, standard cell placement, metal layers, and pin/port definitions along the periphery.
+
+
 
 
 
