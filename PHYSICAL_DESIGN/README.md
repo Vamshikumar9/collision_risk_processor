@@ -370,6 +370,10 @@ To quickly verify and summarize the global signoff metrics from the complete exe
 
 
 ### collision_risk_top.gds
+
+<img width="1257" height="1016" alt="crt_gds" src="https://github.com/user-attachments/assets/f4a34323-0b46-4e3b-b98d-04dc60741a86" />
+
+
 ## Overview
 The top-level physical layout visualization (`collision_risk_top.gds.png`) for the **Collision Risk** hardware block. 
 
